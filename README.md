@@ -1,5 +1,5 @@
 # Minha carteira
-![image](https://user-images.githubusercontent.com/83460816/175075229-3130be38-1892-4892-82fc-ca18d5be0bb8.png)
+![image](https://user-images.githubusercontent.com/83460816/175179284-ca0dadee-96c3-4169-9b16-8f0010d66271.png)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

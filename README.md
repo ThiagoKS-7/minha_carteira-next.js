@@ -1,7 +1,6 @@
 # Minha carteira
 ![image](https://user-images.githubusercontent.com/83460816/175207660-24151ece-f933-4fae-ae62-78880b4744ed.png)
-![image](https://user-images.githubusercontent.com/83460816/175208065-6f1beaf3-0b1c-4762-8d97-9008e0709e78.png)
-
+![image](https://user-images.githubusercontent.com/83460816/175220089-361b5162-1eb8-4bb4-ac0b-771088a4fff7.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

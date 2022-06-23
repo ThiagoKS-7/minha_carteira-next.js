@@ -7,11 +7,13 @@ import {
     BotaoRegister,
 } from './styles'
 import Image from "../../atoms/StyledImage/StyledImage";
+import Icon from "../../atoms/Icon/Icon";
 import useLoginInfo from '../../../../data/hooks/pages/sign_in/useLoginInfo';
 import { YouTubeProps } from 'react-youtube';
 import YoutubePlayer from '../../atoms/YoutubePlayer/YoutubePlayer';
 import LoginContent from '../../molecules/LoginContent/LoginContent';
 import { Box } from '@mui/material';
+import router from 'next/router';
 
 export default function LoginInfo() {
     const opts: YouTubeProps['opts'] = {
@@ -31,13 +33,21 @@ export default function LoginInfo() {
     return (
             <InfoContainer>
                 <LeftSideInfo>
-                    <StyledTitle>Minha carteira</StyledTitle>
+                    <StyledTitle>
+                        <span style={{marginRight:"50px"}}>Minha carteira</span>
+                        <Icon
+                            src="/Images/money.gif"
+                            alt="login purple icon"
+                            width={100}
+                            heigth={100}
+                        />
+                    </StyledTitle>
                     <StyledSubTitle>
                         Gerenciador de gastos do mês <span>🤑</span>
                     </StyledSubTitle>
                     <YoutubePlayer videoId={"9HaU8NjH7bI"} opts={opts} onPlayerReady={onPlayerReady}/>
                     <BotaoContainer>
-                        <BotaoRegister>
+                        <BotaoRegister onClick={() => router.push("/sign_in/register")}>
                            <span>✨ </span>
                            Cadastre-se
                         </BotaoRegister>

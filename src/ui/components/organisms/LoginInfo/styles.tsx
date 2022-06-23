@@ -120,9 +120,9 @@ export const BotaoContainer = styled('div')`
 
 export const BotaoRegister = styled('button')`
     border: none;
-    height: 50px;
+    height: 60px;
     margin: 0 0 0 2rem !important;
-    font-size: 30px;
+    font-size: 40px;
     border-radius: 10px;
     width: 87%;
     background: linear-gradient(90deg, #460e7f 0%, #6113af 45%, #3adef085 100%);
@@ -134,8 +134,9 @@ export const BotaoRegister = styled('button')`
         background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
         animation: gradient 5s ease infinite;
         transition: 0.6s;
+        padding: 0 0 0 -15px;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 35px;
-        height: 60px;
+        font-size: 50px;
+        height: 70px;
     }
 `;

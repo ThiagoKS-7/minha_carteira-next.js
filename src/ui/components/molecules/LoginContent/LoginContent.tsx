@@ -1,4 +1,5 @@
 import { Grid } from '@mui/material';
+import router from 'next/router';
 import { IContentProps } from './@types/IContentProps';
 import {
     StyledTitle,
@@ -17,12 +18,14 @@ export default function LoginContent(props: IContentProps) {
                 <StyledTitle>
                     {props.title}
                 </StyledTitle>
-                <Icon
-                    src="/Images/purple-gif.gif"
-                    alt="login purple icon"
-                    width={75}
-                    heigth={75}
-                />
+                <div style={{display:"flex", alignItems:"center", paddingTop:"15px"}}>
+                    <Icon
+                        src="/Images/purple-gif.gif"
+                        alt="login purple icon"
+                        width={75}
+                        heigth={75}
+                    />
+                </div>
             </TitleContainer>
             <TextFieldWrapper>
                 <h3>📧</h3>
@@ -37,7 +40,7 @@ export default function LoginContent(props: IContentProps) {
                 </Grid>
             </TextFieldWrapper>
             <BotaoSubmit>
-                <BotaoContainer>
+                <BotaoContainer onClick={() => router.push("/")}>
                     <span>Entrar 🚀</span>
                     <Icon
                         src="/Images/arrow-left.png"

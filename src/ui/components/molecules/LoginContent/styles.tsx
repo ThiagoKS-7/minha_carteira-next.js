@@ -2,12 +2,12 @@ import { styled } from "@mui/system";
 import Image from "../../atoms/Icon/Icon";
 
 export const StyledTitle = styled('h1')`
-font-size: 2.5rem;
-text-align: center;
-height:fit-content;
-margin: 0 0 10px 0;
-padding: 15px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    height:fit-content;
+    margin: 0 0 10px 0;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 @media only screen and (min-width : 3976px) and (max-width : 9975px)
 { 
     font-size: 8rem;
@@ -39,38 +39,40 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 `;
 
 export const TextFieldWrapper = styled('div')`
-color: #fff9f9;
-margin: 3%;
-height:10%;
-max-height: 150px;
-padding: 10px;
-display: flex;
-font-size:2rem;
+    color: #fff9f9;
+    margin: 3%;
+    height:10%;
+    max-height: 150px;
+    padding: 10px;
+    display: flex;
+    font-size:2rem;
 `;
 
 export const Input = styled('input')`
-width: 90%;
-margin-left: 7%;
-font-size:30px;
+    width: 90%;
+    margin-left: 7%;
+    font-size:30px;
+    max-height: 65px;
+    border-radius: 8px;
 `;
 
 
 export const BotaoSubmit = styled('button')`
-border: none;
-height: 45px;
-margin-top: 10px;
-font-size: 20px;
-padding: 10px 0 0 10px;
-text-align: start;
-border-radius: 10px;
-width: 87%;
-background: linear-gradient(90deg, #460e7f 0%, #6113af 27%, #3adef085 100%);
-background-size: 300% 300%;
-color: white;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-animation: gradient 10s ease infinite;
-transition: 0.6s;
-margin: 0 0 0 8% !important;
+    border: none;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 0 0 10px;
+    text-align: start;
+    border-radius: 10px;
+    width: 87%;
+    background: linear-gradient(90deg, #460e7f 0%, #6113af 27%, #3adef085 100%);
+    background-size: 300% 300%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: gradient 10s ease infinite;
+    transition: 0.6s;
+    margin: 0 0 0 8% !important;
 &:hover {
     background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
 }
@@ -117,21 +119,22 @@ margin: 0 0 0 8% !important;
 `;
 
 export const Icon = styled(Image)`
-width: 50px;
-height: 50px;
+    width: 50px;
+    height: 50px;
 `;
 
 export const TitleContainer = styled('div')`
-display:flex;
-height: fit-content;
-display:flex;
-justify-content: center;
+    display:flex;
+    height: fit-content;
+    display:flex;
+    margin-top: 2rem;
+    justify-content: center;
 `;
 
 export const BotaoContainer = styled('div')`
-display:flex;
-width: 100%;
-justify-content: space-between;
-align-items: center;
-text-align: center;
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 `;

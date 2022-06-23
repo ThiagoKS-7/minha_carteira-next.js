@@ -1,9 +1,10 @@
 import { styled } from "@mui/system";
+import Image from "../../atoms/Icon/Icon";
 
 export const CardContainer = styled('div')`
     color: white;
     background: linear-gradient(90deg, #22048737 0%, #220b70 55%, #000c3387 100%);
-    width: 35%;
+    width: 100%;
     height: inherit;
     align-self: flex-start;
 `;
@@ -51,12 +52,13 @@ export const TextFieldWrapper = styled('div')`
     height:10%;
     max-height: 150px;
     padding: 10px;
+    display: flex;
     font-size:2rem;
 `;
 
 export const Input = styled('input')`
-    width: 85%;
-    margin-left: 15%;
+    width: 90%;
+    margin-left: 7%;
     font-size:30px;
 `;
 
@@ -65,51 +67,78 @@ export const BotaoSubmit = styled('button')`
     border: none;
     height: 45px;
     margin-top: 10px;
-    margin: 0 0 0 2.5rem !important;
+    margin: 0 0 0 1rem !important;
     font-size: 20px;
+    padding: 10px 0 0 10px;
+    text-align: start;
     border-radius: 10px;
-    width: 150px;
-    background: linear-gradient(90deg, #3d065437 0%, #460e7f 55%, #3a68ff85 100%);
+    width: 120px;
+    background: linear-gradient(90deg, #460e7f 0%, #6113af 27%, #3adef085 100%);
     background-size: 300% 300%;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     animation: gradient 10s ease infinite;
     transition: 0.6s;
+    //linear-gradient(90deg, #460e7f 0%, #6113af 27%, #3adef085 100%);
     &:hover {
-        background: red;
+        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
     }
-
     @media only screen and (min-width : 300px) and (max-width : 950px)
     {
         margin: 0 0 0 2rem !important;
         width: 100px;
         height: 40px;
+        text-align: center;
         font-size: 18px;
+        padding: 10px 0 0 27px;
         &:hover {
             animation: gradient 5s ease infinite;
             transition: 0.6s;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 22px;
+            padding: 10px 0 0 27px;
+            border-radius: 10px;
+            height: 44px;
+            background-size: 300% 300%;
+            color: white;
+            background: (90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);//linear-gradient(90deg, rgba(100,16,189,1) 0%, rgb(150, 17, 211) 27%, rgb(240, 8, 151) 100%);
+        }
+    }
+    @media only screen and (min-width : 951px) and (max-width : 9500px)
+    {
+        margin: 0 0 0 11.5rem !important;
+        background: (90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
+        &:hover {
+            animation: gradient 5s ease infinite;
+            padding: 7px 0 0 10px;
+            transition: 0.6s;
+            height: 48px;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 25px;
             border-radius: 10px;
             background-size: 300% 300%;
             color: white;
-            background: linear-gradient(90deg, #4a040437 0%, #8d0404 55%, #ff272785 100%)//linear-gradient(90deg, rgba(100,16,189,1) 0%, rgb(150, 17, 211) 27%, rgb(240, 8, 151) 100%);
+            background: (90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);//linear-gradient(90deg, rgba(100,16,189,1) 0%, rgb(150, 17, 211) 27%, rgb(240, 8, 151) 100%);
         }
     }
-    @media only screen and (min-width : 951px) and (max-width : 9500px)
-    {
-        margin: 0 0 0 3.5rem !important;
-        &:hover {
-            margin: 0 0 0 5.5rem !important;
-            animation: gradient 5s ease infinite;
-            transition: 0.6s;
-            margin: 0 0 0 8rem;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 30px;
-            border-radius: 10px;
-            background-size: 300% 300%;
-            color: white;
-            background: linear-gradient(90deg, #4a040437 0%, #8d0404 55%, #ff272785 100%)//linear-gradient(90deg, rgba(100,16,189,1) 0%, rgb(150, 17, 211) 27%, rgb(240, 8, 151) 100%);
-        }
-    }
+`;
+
+export const Icon = styled(Image)`
+    width: 50px;
+    height: 50px;
+`;
+
+export const TitleContainer = styled('div')`
+    display:flex;
+    height: fit-content;
+    display:flex;
+    justify-content: center;
+`;
+
+export const BotaoContainer = styled('div')`
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 `;

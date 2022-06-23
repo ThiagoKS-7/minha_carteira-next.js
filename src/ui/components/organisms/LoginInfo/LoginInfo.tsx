@@ -3,6 +3,8 @@ import {
     StyledTitle,
     StyledSubTitle,
     LeftSideInfo,
+    BotaoContainer,
+    BotaoRegister,
 } from './LoginInfo.styles'
 import Image from "../../atoms/StyledImage/StyledImage";
 import YouTube, { YouTubeProps } from 'react-youtube';
@@ -29,7 +31,9 @@ export default function LoginInfo() {
             <InfoContainer>
                 <LeftSideInfo>
                     <StyledTitle>Minha carteira</StyledTitle>
-                    <StyledSubTitle>Gerenciador de gastos do mês</StyledSubTitle>
+                    <StyledSubTitle>
+                        Gerenciador de gastos do mês <span>🤑</span>
+                    </StyledSubTitle>
                     <div style={{
                         marginTop:"25px",
                         marginLeft: "2rem",
@@ -45,6 +49,12 @@ export default function LoginInfo() {
                             />
                         </div>
                     </div>
+                    <BotaoContainer>
+                        <BotaoRegister>
+                           <span>✨ </span>
+                           Cadastre-se
+                        </BotaoRegister>
+                    </BotaoContainer>
                 </LeftSideInfo>
                     <Image 
                         src="/Images/mng.png"

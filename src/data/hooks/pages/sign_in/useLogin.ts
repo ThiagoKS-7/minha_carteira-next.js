@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import {Pet} from '../../@types/User'
+//import {User} from '../../@types/User'
 
-export function useIndex() {
+export function useLogin() {
     const [email,setEmail] = useState("");
     const [senha,setSenha] = useState("");
 

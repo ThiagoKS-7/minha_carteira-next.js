@@ -1,14 +1,10 @@
 import {
     StyledImg
-} from './Icon.styles';
+} from './styles';
 
-interface IIconProps {
-    src:any;
-    alt:string;
-    width:number;
-    height:number;
-}
+
 import { Box } from '@mui/material';
+import { IIconProps } from './@types/IIconProps';
 
 export default function Icon(props: IIconProps ) {
     return (

@@ -9,8 +9,10 @@ export const InfoContainer = styled('div')`
 `;
 
 export const LeftSideInfo = styled('div')`
-    display:"flex";
-    flex-direction:"column";
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 92%;
 `;
 
 export const StyledTitle = styled('h1')`
@@ -122,7 +124,7 @@ export const BotaoRegister = styled('button')`
     margin: 0 0 0 2rem !important;
     font-size: 30px;
     border-radius: 10px;
-    width: 390px;
+    width: 87%;
     background: linear-gradient(90deg, #460e7f 0%, #6113af 45%, #3adef085 100%);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

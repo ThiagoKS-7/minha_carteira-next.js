@@ -1,12 +1,10 @@
 import {
     StyledImg
-} from './StyledImage.styles';
+} from './styles';
 
-interface IStyledImgProps {
-    src:any;
-    alt:string;
-}
+
 import { Box } from '@mui/material';
+import { IStyledImgProps } from './@types/IStyledImgProps';
 
 export default function StyledImage(props: IStyledImgProps ) {
     return (

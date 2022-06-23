@@ -3,17 +3,20 @@ import {
     StyledTitle,
     StyledSubTitle,
     LeftSideInfo,
-} from './LoginInfo.styles'
+    BotaoContainer,
+    BotaoRegister,
+} from './styles'
 import Image from "../../atoms/StyledImage/StyledImage";
-import YouTube, { YouTubeProps } from 'react-youtube';
+import Icon from "../../atoms/Icon/Icon";
+import useLoginInfo from '../../../../data/hooks/pages/sign_in/useLoginInfo';
+import { YouTubeProps } from 'react-youtube';
+import YoutubePlayer from '../../atoms/YoutubePlayer/YoutubePlayer';
+import LoginContent from '../../molecules/LoginContent/LoginContent';
+import { Box } from '@mui/material';
+import router from 'next/router';
 
 export default function LoginInfo() {
-    const onPlayerReady: YouTubeProps['onReady'] = (event) => {
-        // access to player in all event handlers via event.target
-        event.target.pauseVideo();
-      }
-    
-      const opts: YouTubeProps['opts'] = {
+    const opts: YouTubeProps['opts'] = {
         height: '100%',
         width: '100%',
         playerVars: {
@@ -23,28 +26,35 @@ export default function LoginInfo() {
           controls:0,
           modestbranding: 1,
         },
-      };
-
+      }
+    const {
+        onPlayerReady,
+    } = useLoginInfo();
     return (
             <InfoContainer>
                 <LeftSideInfo>
-                    <StyledTitle>Minha carteira</StyledTitle>
-                    <StyledSubTitle>Gerenciador de gastos do mês</StyledSubTitle>
-                    <div style={{
-                        marginTop:"25px",
-                        marginLeft: "2rem",
-                        width:"87%", height:"48%",
-                        background:"linear-gradient(90deg, rgb(23, 94, 200) 0%, #2b0a8f 40%, #151474 50%)",
-                        alignItems:"center", justifyContent:"center"
-                        }}>
-                        <div style={{width:"100%", height:"100%", padding:"5px"}}>
-                            <YouTube 
-                                videoId="9HaU8NjH7bI"
-                                opts={opts} 
-                                onReady={onPlayerReady}
-                            />
-                        </div>
-                    </div>
+                    <StyledTitle>
+                        <span style={{marginRight:"50px"}}>Minha carteira</span>
+                        <Icon
+                            src="/Images/money.gif"
+                            alt="login purple icon"
+                            width={100}
+                            heigth={100}
+                        />
+                    </StyledTitle>
+                    <StyledSubTitle>
+                        Gerenciador de gastos do mês <span>🤑</span>
+                    </StyledSubTitle>
+                    <YoutubePlayer videoId={"9HaU8NjH7bI"} opts={opts} onPlayerReady={onPlayerReady}/>
+                    <BotaoContainer>
+                        <BotaoRegister onClick={() => router.push("/sign_in/register")}>
+                           <span>✨ </span>
+                           Cadastre-se
+                        </BotaoRegister>
+                    </BotaoContainer>
+                    <Box component={'div'} sx={{display:{sm: 'none', xs: 'initial'}}}>
+                        <LoginContent title="Ou faça seu login"/>
+                    </Box>
                 </LeftSideInfo>
                     <Image 
                         src="/Images/mng.png"

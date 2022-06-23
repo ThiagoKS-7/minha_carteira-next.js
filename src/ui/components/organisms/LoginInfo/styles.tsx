@@ -9,8 +9,10 @@ export const InfoContainer = styled('div')`
 `;
 
 export const LeftSideInfo = styled('div')`
-    display:"flex";
-    flex-direction:"column";
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 92%;
 `;
 
 export const StyledTitle = styled('h1')`
@@ -99,7 +101,7 @@ export const VideoContainer = styled('div')`
  margin-top:"25px";
  margin-left: "2rem";
  width:"87%";
- background:linear-gradient(90deg, #4787e7 0%, #2b0a8f 40%, #0e0d38 50%);
+ background:linear-gradient(90deg, #460e7f 0%, #6113af 27%, #3adef085 100%);
  align-items:"center";
  justify-content:"center";
 `;  
@@ -108,4 +110,33 @@ export const YoutubeWrapper = styled('div')`
     width:"100%";
     height:"100%";
     padding:"5px";
+`;
+
+
+export const BotaoContainer = styled('div')`
+    margin-top: 2rem;
+    height: fit-content;
+`;
+
+export const BotaoRegister = styled('button')`
+    border: none;
+    height: 60px;
+    margin: 0 0 0 2rem !important;
+    font-size: 40px;
+    border-radius: 10px;
+    width: 87%;
+    background: linear-gradient(90deg, #460e7f 0%, #6113af 45%, #3adef085 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: gradient 10s ease infinite;
+    transition: 0.6s;
+    &:hover {
+        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
+        animation: gradient 5s ease infinite;
+        transition: 0.6s;
+        padding: 0 0 0 -15px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 50px;
+        height: 70px;
+    }
 `;

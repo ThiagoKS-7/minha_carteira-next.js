@@ -1,11 +1,8 @@
+import { IContainerProps } from './@types/IContainerProps';
 import {
     StyledContainer
-} from './Container.styles';
+} from './styles';
 
-interface IContainerProps {
-    children: any;
-    style?: any;
-}
 
 export default function Container(props: IContainerProps ) {
     return (

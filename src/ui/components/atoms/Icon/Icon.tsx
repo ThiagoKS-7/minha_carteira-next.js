@@ -4,13 +4,13 @@ import {
 
 
 import { Box } from '@mui/material';
-import { IStyledImgProps } from './@types/IStyledImgProps';
+import { IIconProps } from './@types/IIconProps';
 
-export default function StyledImage(props: IStyledImgProps ) {
+export default function Icon(props: IIconProps ) {
     return (
         <>
             <Box component={'div'} sx={{display:{sm: 'initial', xs: 'none'}}}>
-                <StyledImg src={props.src} alt={props.alt} />
+                <StyledImg src={props.src} alt={props.alt} width={props.width} height={props.height}/>
             </Box>
         </>
     )

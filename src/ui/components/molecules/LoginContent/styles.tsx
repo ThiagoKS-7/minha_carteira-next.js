@@ -42,10 +42,20 @@ export const TextFieldWrapper = styled('div')`
     color: #fff9f9;
     margin: 3%;
     height:10%;
-    max-height: 150px;
+    max-height: 70px;
     padding: 10px;
     display: flex;
     font-size:2rem;
+    @media only screen and (min-width : 300px) and (max-width : 625px)
+    {
+        height: 34px;
+        color: #fff9f9;
+        margin: 3%;
+        height:18%;
+        padding: 10px;
+        display: flex;
+        font-size:2rem;
+    }
 `;
 
 export const Input = styled('input')`
@@ -76,10 +86,10 @@ export const BotaoSubmit = styled('button')`
 &:hover {
     background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
 }
-@media only screen and (min-width : 300px) and (max-width : 950px)
+@media only screen and (min-width : 300px) and (max-width : 625px)
 {
-    margin: 0 0 0 57% !important;
-    width: 135px;
+    margin: 2% 0 0 52%!important;
+    width: 166px;
     height: 40px;
     text-align: center;
     font-size: 18px;
@@ -134,7 +144,20 @@ export const TitleContainer = styled('div')`
 export const BotaoContainer = styled('div')`
     display:flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
 `;
+
+export const Text = styled('span')`
+    padding: 0 0 5px 0;
+`;
+
+export const ButtonIcon = styled('img')`
+    width: 35px;
+    margin: 0px 0px 5px 0px;
+    height: 35px;
+    animation: gradient 5s ease infinite;
+    transition: 0.6s;
+`;
+

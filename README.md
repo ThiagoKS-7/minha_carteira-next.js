@@ -1,6 +1,11 @@
 # Minha carteira
-![image](https://user-images.githubusercontent.com/83460816/175207660-24151ece-f933-4fae-ae62-78880b4744ed.png)
-![image](https://user-images.githubusercontent.com/83460816/175220089-361b5162-1eb8-4bb4-ac0b-771088a4fff7.png)
+Esse projeto tem como objetivo, além de treinar habilidade de frontend em nextjse typescript, facilitar o gerenciamento de gastos mensais dos seus usuários, fornecendo um dashboard que mostra quanto a pessoa gastou, se chegou a sobrar algo e quais são os gastos fixos;
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/83460816/175465843-d90a9dda-80e0-4e3c-91c4-47bfaa720885.png" />
+<img width="300px" height="600px" src="https://user-images.githubusercontent.com/83460816/175466061-d08b8cff-b24d-40a1-9ee8-1dfc7798c815.png" />
+
+</div>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

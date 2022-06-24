@@ -3,8 +3,8 @@ import {
     Icon,
 } from './styles';
 import { Grid} from '@mui/material';
-import { ICardProps } from './@types/LoginCard';
-import LoginContent from '../../molecules/LoginContent/LoginContent';
+import { ICardProps } from './@types';
+import LoginContent from '@/molecules/LoginContent/LoginContent';
 
 
 export default function LoginCard(props: ICardProps) {

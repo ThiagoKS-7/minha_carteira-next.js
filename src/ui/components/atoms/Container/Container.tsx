@@ -1,4 +1,4 @@
-import { IContainerProps } from './@types/IContainerProps';
+import { IContainerProps } from './@types';
 import {
     StyledContainer
 } from './styles';

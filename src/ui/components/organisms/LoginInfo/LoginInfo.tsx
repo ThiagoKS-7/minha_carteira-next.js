@@ -6,12 +6,12 @@ import {
     BotaoContainer,
     BotaoRegister,
 } from './styles'
-import Image from "../../atoms/StyledImage/StyledImage";
-import Icon from "../../atoms/Icon/Icon";
-import useLoginInfo from '../../../../data/hooks/pages/sign_in/useLoginInfo';
+import Image from "@/atoms/StyledImage/StyledImage";
+import Icon from "@/atoms/Icon/Icon";
+import useLoginInfo from '@/hooks/pages/sign_in/useLoginInfo';
 import { YouTubeProps } from 'react-youtube';
-import YoutubePlayer from '../../atoms/YoutubePlayer/YoutubePlayer';
-import LoginContent from '../../molecules/LoginContent/LoginContent';
+import YoutubePlayer from '@/atoms/YoutubePlayer/YoutubePlayer';
+import LoginContent from '@/molecules/LoginContent/LoginContent';
 import { Box } from '@mui/material';
 import router from 'next/router';
 
@@ -38,7 +38,7 @@ export default function LoginInfo() {
                         <Icon
                             src="/Images/money.gif"
                             alt="login purple icon"
-                            width={100}
+                            width={"10%"}
                             heigth={100}
                         />
                     </StyledTitle>

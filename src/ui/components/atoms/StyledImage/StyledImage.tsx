@@ -4,7 +4,7 @@ import {
 
 
 import { Box } from '@mui/material';
-import { IStyledImgProps } from './@types/IStyledImgProps';
+import { IStyledImgProps } from './@types';
 
 export default function StyledImage(props: IStyledImgProps ) {
     return (

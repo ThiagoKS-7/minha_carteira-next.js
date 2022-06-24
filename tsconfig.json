@@ -13,7 +13,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": "./src/",
+        "paths": {
+            "@/atoms/*": ["ui/components/atoms/*"],
+            "@/molecules/*": ["ui/components/molecules/*"],
+            "@/organisms/*": ["ui/components/organisms/*"],
+            "@/types/*":["data/@types/*"],
+            "@/hooks/*":["data/hooks/*"],
+            "@/services/*":["data/services/*"]
+        }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/ui/components/atoms/Icon/.styles.tsx"],
   "exclude": ["node_modules"]

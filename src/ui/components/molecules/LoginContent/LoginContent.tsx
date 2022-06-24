@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import router from 'next/router';
-import { IContentProps } from './@types/IContentProps';
+import { IContentProps } from './@types';
 import {
     StyledTitle,
     TextFieldWrapper,

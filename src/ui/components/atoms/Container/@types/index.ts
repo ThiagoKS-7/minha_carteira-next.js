@@ -1,4 +1,4 @@
-export interface IContainerProps {
+export type IContainerProps {
     children: any;
     style?: any;
 }

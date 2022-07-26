@@ -1,17 +1,16 @@
 import type { NextPage } from "next";
-import Container from "../../ui/components/atoms/Container/Container";
-import LoginCard from "../../ui/components/organisms/LoginCard/LoginCard";
-import LoginInfo from "../../ui/components/organisms/LoginInfo/LoginInfo";
+import Grid from "../../ui/components/atoms/LoginContainer/LoginContainer";
+import LoginHeader from "@/organisms/Login/LoginHeader/LoginHeader";
+import LoginAside from "@/organisms/Login/LoginAside/LoginAside";
+import LoginContent from "@/organisms/Login/LoginContent/LoginContent";
 import { Box } from '@mui/material';
-
 const Login: NextPage = () => {
     return (
-        <Container >
-            <LoginInfo/>
-            <Box component={'div'} sx={{display:{sm: 'initial', xs: 'none'}}}>
-                <LoginCard/>
-            </Box>
-        </Container>
+        <Grid>
+            <LoginHeader title={'Minha carteira'} subtitle={'Gerenciador de gastos do mês 🤑'}/>
+            <LoginAside />
+            <LoginContent />
+        </Grid>
     );
 }
 

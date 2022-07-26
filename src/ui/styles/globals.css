@@ -29,6 +29,10 @@ input {
   font-family: Roboto, sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 img {
   height:fit-content;
 }

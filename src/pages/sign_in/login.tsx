@@ -1,17 +1,30 @@
 import type { NextPage } from "next";
-import Container from "../../ui/components/atoms/Container/Container";
-import LoginCard from "../../ui/components/organisms/LoginCard/LoginCard";
-import LoginInfo from "../../ui/components/organisms/LoginInfo/LoginInfo";
-import { Box } from '@mui/material';
-
+import Grid from "@/atoms/LoginContainer/LoginContainer";
+import LoginHeader from "@/organisms/Login/LoginHeader/LoginHeader";
+import LoginAside from "@/organisms/Login/LoginAside/LoginAside";
+import LoginContent from "@/organisms/Login/LoginContent/LoginContent";
+import { Box } from "@mui/material";
+import MobileContainer from "@/atoms/MobileContainer/MobileContainer";
 const Login: NextPage = () => {
     return (
-        <Container >
-            <LoginInfo/>
-            <Box component={'div'} sx={{display:{sm: 'initial', xs: 'none'}}}>
-                <LoginCard/>
+        <>
+            <Box component={'div'} sx={{display:{sm:'contents',xs: 'none'}}}>
+                <Grid>
+                    <Box component={'div'} sx={{display:{sm:'contents',xs: 'none'}}}>
+                        <LoginHeader title={'Minha carteira'} subtitle={'Gerenciador de gastos do mês 🤑'}/>
+                    </Box>
+                    <Box component={'div'} sx={{display:{sm:'contents',xs: 'none'}}}>
+                        <LoginAside />
+                    </Box>
+                    <LoginContent />
+                </Grid>
             </Box>
-        </Container>
+            <Box component={'div'} sx={{display:{sm:'none',xs: 'contents'}}}>
+                <MobileContainer>
+                    <LoginContent />
+                </MobileContainer>
+            </Box>
+        </>
     );
 }
 

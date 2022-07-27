@@ -11,7 +11,8 @@ export default function YoutubePlayer(props: IYtPlayerProps) {
                     marginTop:"25px",
                     marginLeft: "2rem",
                     borderRadius: "5px",
-                    width:"87%",
+                    width:"92%",
+                    height:"100%",
                     background:"linear-gradient(90deg, rgb(23, 94, 200) 0%, #2b0a8f 40%, #151474 50%)",
                     alignItems:"center", justifyContent:"center"
                 }}>
@@ -19,7 +20,7 @@ export default function YoutubePlayer(props: IYtPlayerProps) {
                         <YouTube 
                             videoId={props.videoId}
                             opts={props.opts} 
-                            onReady={props.onPlayerReady}
+                            onReady={props.onReady}
                         />
                     </div>
                 </div>

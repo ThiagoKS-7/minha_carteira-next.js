@@ -1,4 +1,4 @@
-export type IStyledImgProps {
+export type IStyledImgProps = {
     src:any;
     alt:string;
 }

@@ -12,9 +12,10 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.8.4",
-    "next": "12.1.6",
+    "next": "^12.2.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-youtube": "^9.0.3"
   },
   "devDependencies": {
     "@types/node": "18.0.0",

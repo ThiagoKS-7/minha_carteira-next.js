@@ -17,6 +17,7 @@
     "baseUrl": "./src/",
         "paths": {
             "@/atoms/*": ["ui/components/atoms/*"],
+            "@/images/*": ["public/images/*"],
             "@/molecules/*": ["ui/components/molecules/*"],
             "@/organisms/*": ["ui/components/organisms/*"],
             "@/types/*":["data/@types/*"],

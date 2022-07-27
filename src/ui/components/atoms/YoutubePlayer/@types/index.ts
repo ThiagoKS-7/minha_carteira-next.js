@@ -1,5 +1,5 @@
-export type IYtPlayerProps {
+export type IYtPlayerProps = {
     opts: any;
-    onPlayerReady: any;
+    onReady: any;
     videoId: string;
 }

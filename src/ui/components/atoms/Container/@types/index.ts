@@ -1,4 +1,4 @@
-export type IContainerProps {
+export type IContainerProps = {
     children: any;
     style?: any;
 }

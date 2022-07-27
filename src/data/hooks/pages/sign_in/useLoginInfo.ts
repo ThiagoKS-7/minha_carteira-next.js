@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import { YouTubeProps } from 'react-youtube';
 
 export default function useLoginInfo() {
@@ -9,5 +8,5 @@ export default function useLoginInfo() {
     
 
 
-    return (onPlayerReady)
+    return (onPlayerReady);
 }

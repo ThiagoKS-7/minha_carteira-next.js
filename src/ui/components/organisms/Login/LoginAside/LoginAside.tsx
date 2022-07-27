@@ -6,6 +6,7 @@ import {
     AsideContainer,
 } from './styles'
 import Button from "@/atoms/DefaultButton/DefaultButton";
+import router from "next/router";
 
 
 export default function LoginAside(props: IAsideProps) {
@@ -20,7 +21,7 @@ export default function LoginAside(props: IAsideProps) {
           />
           <DefaultInput type="email" placeholder=" Digite o seu e-mail:" label="📧"/>
           <DefaultInput type="password" placeholder=" Digite a sua senha:" label="🔑" />
-          <Button isGradient={false}>
+          <Button isGradient={false} onClick={() => router.push("/")}>
             Entrar
             <span>🚀</span>
           </Button>

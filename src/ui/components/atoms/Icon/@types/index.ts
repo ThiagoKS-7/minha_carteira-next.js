@@ -1,4 +1,4 @@
-export type IIconProps {
+export type IIconProps = {
     src:any;
     alt:string;
     width:number;

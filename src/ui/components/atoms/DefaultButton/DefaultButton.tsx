@@ -1,5 +1,4 @@
 import { IButtonProps } from "./@types";
-import router from 'next/router';
 import {
     StyledButton,
     GradientButton,
@@ -14,13 +13,13 @@ export default function DefaultText(props: IButtonProps)  {
     <>
       {props.isGradient ?
         <GradientContainer>
-            <GradientButton onClick={() => router.push("/sign_in/register")}>
+            <GradientButton onClick={props.onClick}>
                 {props.children}
             </GradientButton>
         </GradientContainer>
         :
         <ButtonContainer>
-          <StyledButton onClick={() => router.push("/")}>
+          <StyledButton onClick={props.onClick}>
                 {props.children}
             </StyledButton>
         </ButtonContainer>

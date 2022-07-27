@@ -12,7 +12,7 @@ const tema = createTheme({
     },
     text: {
       primary: "#293845",
-      secondary: "#9EADBA",
+      secondary: "#edebeb",
     },
   },
   typography: {

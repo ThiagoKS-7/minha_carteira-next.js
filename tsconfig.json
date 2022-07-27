@@ -21,6 +21,7 @@
             "@/molecules/*": ["ui/components/molecules/*"],
             "@/organisms/*": ["ui/components/organisms/*"],
             "@/types/*":["data/@types/*"],
+            "@/utils/*":["data/@utils/*"],
             "@/hooks/*":["data/hooks/*"],
             "@/services/*":["data/services/*"]
         }

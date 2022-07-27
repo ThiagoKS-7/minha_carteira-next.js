@@ -2,9 +2,8 @@ import { styled } from "@mui/system";
 
 export const TextFieldWrapper = styled('div')`
     color: #fff9f9;
-    margin: 3%;
-    height:12%;
-    max-height: 150px;
+    height: 100%;
+    max-height: 68px;
     padding: 10px;
     display: flex;
     font-size:2rem;

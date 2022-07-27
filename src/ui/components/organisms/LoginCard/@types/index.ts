@@ -1,4 +1,4 @@
-export interface ICardProps {
+export type ICardProps {
     children: any;
     valueEmail:string,
     onChangeEmail: (e:any) => void

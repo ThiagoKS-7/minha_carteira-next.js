@@ -1,7 +1,7 @@
 import { styled } from "@mui/system";
 
 export const StyledImg = styled('img')`
-    margin: 0 10px 0 0;
+    width:100%;
     padding-bottom: 10px;
     align-self: flex-start;
     

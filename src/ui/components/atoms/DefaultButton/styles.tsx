@@ -2,7 +2,7 @@ import { styled } from "@mui/system";
 
 export const GradientContainer = styled('div')`
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     height:fit-content;
     margin-top: 10px;
 `;
@@ -39,8 +39,21 @@ export const GradientButton = styled('button')`
     }
     @media only screen and (min-width : 300px) and (max-width : 700px)
     { 
+        font-size: 25px;
+        width: 78%;
+        &:hover {
+        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
+        animation: gradient 5s ease infinite;
+        transition: 0.6s;
+        padding: 0 0 0 -15px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 28px;
+        }
+    }
+    @media only screen and (min-width : 701px) and (max-width : 1028px)
+    { 
         font-size: 30px;
-        width: 15em;
+        width: 66%;
         &:hover {
         background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
         animation: gradient 5s ease infinite;
@@ -48,7 +61,39 @@ export const GradientButton = styled('button')`
         padding: 0 0 0 -15px;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 32px;
+        }
     }
+    @media only screen and (min-width : 1029px) and (max-width : 1655px)
+    { 
+        width: 68%;
+        font-size: 25px;
+        &:hover {
+        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
+        animation: gradient 5s ease infinite;
+        transition: 0.6s;
+        width: 68%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 27px;
+        }
+    }
+    @media only screen and (min-width : 30px) and (max-width : 600px)
+    { 
+        width: 23em;
+        font-size: 20px;
+        height: 40px;
+        &:hover {
+        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
+        animation: gradient 5s ease infinite;
+        transition: 0.6s;
+        width: 21em;
+        height: 40px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 22px;
+        }
+    }
+    @media only screen and (min-width : 1656px) and (max-width : 3000px)
+    { 
+        width: 66%;
     }
 `;
 
@@ -74,19 +119,19 @@ export const StyledButton = styled('button')`
 }
 @media only screen and (min-width : 300px) and (max-width : 950px)
 {
-    margin: 0 0 0 57% !important;
+    margin: 0 0 0 51% !important;
     width: 135px;
-    height: 40px;
+    height: 45px;
     text-align: center;
     font-size: 18px;
     display: flex;
     justify-content: center;
-    padding: 10px 0 0 35px;
+    padding: 10px 0 0 13px;
     &:hover {
         animation: gradient 5s ease infinite;
         transition: 0.6s;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 22px;
+        font-size: 20px;
         padding: 10px 0 0 25px;
         border-radius: 10px;
         height: 44px;

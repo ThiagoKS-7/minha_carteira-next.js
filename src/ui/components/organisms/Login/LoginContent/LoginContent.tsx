@@ -1,12 +1,17 @@
 import { ILoginContentProps } from "./@types";
 import {
     LoginContainer,
+    ImageWrapper,
+    LoginWrapper,
+    VideoWrapper,
+    StyledImage,
 } from './styles'
 import useLoginInfo from '@/hooks/pages/sign_in/useLoginInfo';
 import { YouTubeProps } from 'react-youtube';
 import YoutubePlayer from '@/atoms/YoutubePlayer/YoutubePlayer';
 import Button from "@/atoms/DefaultButton/DefaultButton";
-
+import Text from '@/atoms/DefaultText/DefaultText';
+import DefaultInput from "@/atoms/DefaultInput/DefaultInput";
 
 export default function LoginContent(props: ILoginContentProps) {
   const opts: YouTubeProps['opts'] = {
@@ -25,11 +30,30 @@ export default function LoginContent(props: ILoginContentProps) {
   } = useLoginInfo();
   return (
     <LoginContainer>
-      <YoutubePlayer videoId={"9HaU8NjH7bI"} opts={opts} onReady={onPlayerReady}/>
-      <Button isGradient={true}>
-        <span>✨ </span>
-        Cadastre-se
-      </Button>
+      <VideoWrapper>
+          <YoutubePlayer videoId={"9HaU8NjH7bI"} opts={opts} onReady={onPlayerReady}/>
+          <Button isGradient={true}>
+            <span>✨ </span>
+            Cadastre-se
+          </Button>
+          <LoginWrapper>
+            <Text isTitle={true}>
+                Ou faça o seu login
+            </Text>
+            <DefaultInput type="email" placeholder=" Digite o seu e-mail:" label="📧"/>
+            <DefaultInput type="password" placeholder=" Digite a sua senha:" label="🔑" />
+            <Button isGradient={false}>
+              Entrar
+              <span>🚀</span>
+            </Button>
+          </LoginWrapper>
+      </VideoWrapper>
+      <ImageWrapper>
+        <StyledImage
+          src="/Images/mng.png"
+          alt="main content image"
+        />
+      </ImageWrapper>
     </LoginContainer>
   )
 }

@@ -1,6 +1,6 @@
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import router from 'next/router';
-import { IContentProps } from './@types/IContentProps';
+import { IContentProps } from './@types';
 import {
     StyledTitle,
     TextFieldWrapper,
@@ -9,6 +9,8 @@ import {
     Icon,
     TitleContainer,
     BotaoContainer,
+    Text,
+    ButtonIcon
 } from './styles';
 
 export default function LoginContent(props: IContentProps) {
@@ -41,12 +43,12 @@ export default function LoginContent(props: IContentProps) {
             </TextFieldWrapper>
             <BotaoSubmit>
                 <BotaoContainer onClick={() => router.push("/")}>
-                    <span>Entrar 🚀</span>
-                    <Icon
+                    <Text>
+                        Entrar 🚀
+                    </Text>
+                    <ButtonIcon
                         src="/Images/arrow-left.png"
                         alt="login left arrow"
-                        width={30}
-                        heigth={30}
                     />
                 </BotaoContainer>
             </BotaoSubmit>

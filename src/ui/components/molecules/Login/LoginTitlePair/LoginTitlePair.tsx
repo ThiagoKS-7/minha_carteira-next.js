@@ -1,4 +1,5 @@
 import Text from '@/atoms/DefaultText/DefaultText';
+import { Box } from '@mui/material';
 import { ILoginTitlePairProps } from "./@types";
 import {
     PairContainer,
@@ -11,9 +12,11 @@ export default function LoginPair(props: ILoginTitlePairProps) {
       <Text isTitle={true}>
         {props.title}
       </Text>
-      <Text isTitle={false}>
-        {props.subtitle}
-      </Text>
+      <Box component={'div'} sx={{display:{sm: 'initial', xs: 'none'}}}>
+        <Text isTitle={false}>
+          {props.subtitle}
+        </Text>
+      </Box>
     </PairContainer>
   )
 }

@@ -5,6 +5,7 @@ import LoginAside from "@/organisms/Login/LoginAside/LoginAside";
 import LoginContent from "@/organisms/Login/LoginContent/LoginContent";
 import { Box } from "@mui/material";
 import MobileContainer from "@/atoms/MobileContainer/MobileContainer";
+import Text from '@/atoms/DefaultText/DefaultText';
 const Login: NextPage = () => {
     return (
         <>
@@ -21,6 +22,12 @@ const Login: NextPage = () => {
             </Box>
             <Box component={'div'} sx={{display:{sm:'none',xs: 'contents'}}}>
                 <MobileContainer>
+                    <Text isTitle={true}>
+                        Minha carteira
+                    </Text>
+                    <Text isTitle={false}>
+                        Gerenciador de gastos do mês 🤑
+                    </Text>
                     <LoginContent />
                 </MobileContainer>
             </Box>

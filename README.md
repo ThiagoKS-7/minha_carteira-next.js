@@ -2,8 +2,9 @@
 Esse projeto tem como objetivo, além de treinar habilidade de frontend em nextjse typescript, facilitar o gerenciamento de gastos mensais dos seus usuários, fornecendo um dashboard que mostra quanto a pessoa gastou, se chegou a sobrar algo e quais são os gastos fixos;
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/83460816/175465843-d90a9dda-80e0-4e3c-91c4-47bfaa720885.png" />
-<img width="300px" height="600px" src="https://user-images.githubusercontent.com/83460816/175466061-d08b8cff-b24d-40a1-9ee8-1dfc7798c815.png" />
+<img src="https://user-images.githubusercontent.com/83460816/181144840-5caa2c36-7299-4d9b-b80e-e7441d077230.png" />
+<img src="https://user-images.githubusercontent.com/83460816/181144941-cbcaf7d6-b65f-487f-9773-460909f3959d.png" />
+<img src="https://user-images.githubusercontent.com/83460816/181145087-24b7844c-95b0-410d-9735-663c0eed3dd4.png" />
 
 </div>
 

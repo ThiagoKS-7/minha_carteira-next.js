@@ -1,3 +1,6 @@
+import { useRouter } from 'next/router'
+import Router from "routes/Router";
+import DashContent from "../DashContent/DashContent";
 import { IMainContentProps } from "./@types";
 import {
     Container,
@@ -5,9 +8,10 @@ import {
 
 
 export default function MainContent(props: IMainContentProps) {
+    const router = useRouter();
   return (
     <Container>
-      <h1>MainContent</h1>
+      {router.query.value ? <Router/> : <DashContent/>} 
     </Container>
   )
 }

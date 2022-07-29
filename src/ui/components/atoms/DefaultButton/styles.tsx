@@ -23,14 +23,35 @@ export const GradientButton = styled('button')`
     border-radius: 10px;
     margin-left: 25px;
     width: 50%;
-    background: linear-gradient(90deg, #460e7f 0%, #6113af 45%, #3adef085 100%);
+    background-image: linear-gradient(to left, #8066ea, #7a2dc6, #6bc6d6, #651aa1);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     animation: gradient 10s ease infinite;
     transition: 0.6s;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    &:focus {
+        outline: none;
+    }
     &:hover {
-        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
-        animation: gradient 5s ease infinite;
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+            animation: gradient 5s ease infinite;
         transition: 0.6s;
         padding: 0 0 0 -15px;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,12 +63,18 @@ export const GradientButton = styled('button')`
         font-size: 25px;
         width: 78%;
         &:hover {
-        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
-        animation: gradient 5s ease infinite;
-        transition: 0.6s;
-        padding: 0 0 0 -15px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 28px;
+            animation: gradient 5s ease infinite;
+            transition: 0.6s;
+            padding: 0 0 0 -15px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 28px;
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+                animation: gradient 5s ease infinite;
+            transition: 0.6s;
         }
     }
     @media only screen and (min-width : 701px) and (max-width : 1028px)
@@ -55,12 +82,18 @@ export const GradientButton = styled('button')`
         font-size: 30px;
         width: 66%;
         &:hover {
-        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
-        animation: gradient 5s ease infinite;
-        transition: 0.6s;
-        padding: 0 0 0 -15px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 32px;
+            animation: gradient 5s ease infinite;
+            transition: 0.6s;
+            padding: 0 0 0 -15px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 32px;
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+                animation: gradient 5s ease infinite;
+            transition: 0.6s;
         }
     }
     @media only screen and (min-width : 1029px) and (max-width : 1655px)
@@ -68,12 +101,18 @@ export const GradientButton = styled('button')`
         width: 68%;
         font-size: 25px;
         &:hover {
-        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
-        animation: gradient 5s ease infinite;
-        transition: 0.6s;
-        width: 68%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 27px;
+            animation: gradient 5s ease infinite;
+            transition: 0.6s;
+            width: 68%;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 27px;
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+                animation: gradient 5s ease infinite;
+            transition: 0.6s;
         }
     }
     @media only screen and (min-width : 30px) and (max-width : 600px)
@@ -82,13 +121,19 @@ export const GradientButton = styled('button')`
         font-size: 20px;
         height: 40px;
         &:hover {
-        background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
-        animation: gradient 5s ease infinite;
-        transition: 0.6s;
-        width: 21em;
-        height: 40px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 22px;
+            animation: gradient 5s ease infinite;
+            transition: 0.6s;
+            width: 21em;
+            height: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 22px;
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+                animation: gradient 5s ease infinite;
+            transition: 0.6s;
         }
     }
     @media only screen and (min-width : 1656px) and (max-width : 3000px)
@@ -106,16 +151,29 @@ export const StyledButton = styled('button')`
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    width: 87%;
-    background: linear-gradient(90deg, #460e7f 0%, #6113af 27%, #3adef085 100%);
+    width: 79%;
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
     background-size: 300% 300%;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     animation: gradient 10s ease infinite;
     transition: 0.6s;
     margin: 0 0 0 8% !important;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
 &:hover {
-    background: linear-gradient(90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+        animation: gradient 5s ease infinite;
+    transition: 0.6s;
 }
 @media only screen and (min-width : 300px) and (max-width : 950px)
 {
@@ -127,6 +185,13 @@ export const StyledButton = styled('button')`
     display: flex;
     justify-content: center;
     padding: 10px 0 0 13px;
+    animation: gradient 10s ease infinite;
+    transition: 0.6s;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
     &:hover {
         animation: gradient 5s ease infinite;
         transition: 0.6s;
@@ -135,15 +200,19 @@ export const StyledButton = styled('button')`
         padding: 10px 0 0 25px;
         border-radius: 10px;
         height: 44px;
-        background-size: 300% 300%;
         color: white;
-        background: (90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);//linear-gradient(90deg, rgba(100,16,189,1) 0%, rgb(150, 17, 211) 27%, rgb(240, 8, 151) 100%);
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+            animation: gradient 5s ease infinite;
+        transition: 0.6s;
     }
 }
 @media only screen and (min-width : 951px) and (max-width : 9500px)
 {
     margin: 0 0 0 8% !important;
-    background: (90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);
     &:hover {
         animation: gradient 5s ease infinite;
         padding: 7px 0 0 10px;
@@ -154,7 +223,13 @@ export const StyledButton = styled('button')`
         border-radius: 10px;
         background-size: 300% 300%;
         color: white;
-        background: (90deg, #09501a 0%, #0c9a24 55%, #9cfa3885 100%);//linear-gradient(90deg, rgba(100,16,189,1) 0%, rgb(150, 17, 211) 27%, rgb(240, 8, 151) 100%);
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+            animation: gradient 5s ease infinite;
+        transition: 0.6s;
     }
 }
 `;

@@ -43,7 +43,7 @@ export default function LoginContent(props: ILoginContentProps) {
             </Text>
             <DefaultInput type="email" placeholder=" Digite o seu e-mail:" label="📧"/>
             <DefaultInput type="password" placeholder=" Digite a sua senha:" label="🔑" />
-            <Button isGradient={false} onClick={() => router.push("/")}>
+            <Button isGradient={false} onClick={() => router.push("/?value=1", "/dashboard", {shallow:true})}>
               Entrar
               <span>🚀</span>
             </Button>

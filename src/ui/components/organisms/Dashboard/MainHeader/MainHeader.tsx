@@ -26,7 +26,7 @@ export default function MainHeader (props: IMainHeaderProps) {
         <Profile>
           <WelcomeWrapper>
             <Welcome>Olá, {emoji}</Welcome>
-            <Box component={ExitIcon} color="inherit" sx={{ mr: 1 }} onClick={()=>{router.push("/sign_in/login")}}/>
+            <Box component={ExitIcon} color="inherit" sx={{ mr: 1 }} onClick={()=>{router.push("/sign_in/login")}} style={{cursor:"pointer"}}/>
           </WelcomeWrapper>
             <UserName>Thiago Kasper de Souza</UserName>
         </Profile>

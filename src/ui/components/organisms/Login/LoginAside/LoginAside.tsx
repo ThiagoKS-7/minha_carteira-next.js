@@ -21,7 +21,7 @@ export default function LoginAside(props: IAsideProps) {
           />
           <DefaultInput type="email" placeholder=" Digite o seu e-mail:" label="📧"/>
           <DefaultInput type="password" placeholder=" Digite a sua senha:" label="🔑" />
-          <Button isGradient={false} onClick={() => router.push("/")}>
+          <Button isGradient={false} onClick={() => router.push("/?value=1", undefined, {shallow:true})}>
             Entrar
             <span>🚀</span>
           </Button>

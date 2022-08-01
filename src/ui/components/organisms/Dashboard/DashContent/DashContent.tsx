@@ -1,3 +1,4 @@
+import MainContentHeader from "@/organisms/MainContentHeader/MainContentHeader";
 import { IDashContentProps } from "./@types";
 import {
     Container,
@@ -7,7 +8,7 @@ import {
 export default function DashContent(props: IDashContentProps) {
   return (
     <Container>
-      <h1>DashContent</h1>
+      <MainContentHeader title="Dashboard"/>
     </Container>
   )
 }

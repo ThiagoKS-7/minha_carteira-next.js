@@ -14,4 +14,5 @@ export const ImageWrapper = styled('div')`
 `;
 
 export const LogoName = styled('img')`
+    margin-left: -40px;
 `;

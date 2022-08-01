@@ -3,6 +3,9 @@ import { styled } from "@mui/system";
 export const Container = styled('div')`
     height: 62%;
     width:67%;
+    * {
+        height: 100%;
+    }
     @media only screen and (min-width : 30px) and (max-width : 600px)
     { 
         height: 47%;

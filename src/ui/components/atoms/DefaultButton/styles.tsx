@@ -136,9 +136,17 @@ export const GradientButton = styled('button')`
             transition: 0.6s;
         }
     }
-    @media only screen and (min-width : 1656px) and (max-width : 3000px)
+    @media only screen and (min-width : 1656px) and (max-width : 1710px)
     { 
-        width: 66%;
+        width: 79%;
+    }
+    @media only screen and (min-width : 1711px) and (max-width : 2080px)
+    { 
+        width: 67%;
+    }
+    @media only screen and (min-width : 2081px) and (max-width : 3800px)
+    { 
+        width: 62%;
     }
 `;
 

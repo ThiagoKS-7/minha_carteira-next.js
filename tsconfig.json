@@ -23,6 +23,7 @@
             "@/types/*":["data/@types/*"],
             "@/utils/*":["data/@utils/*"],
             "@/hooks/*":["data/hooks/*"],
+            "@/repositories/*":["data/repositories/*"],
             "@/themes/*":["ui/styles/themes/*"],
             "@/services/*":["data/services/*"]
         }

@@ -11,6 +11,10 @@ export const TextFieldWrapper = styled('div')`
 
 export const StyledInput = styled('input')`
     width: 90%;
+    height: 100%;
+    * {
+        height: 100%;
+    }
     margin-left: 8%;
     font-size:20px;
     max-height: 85px;

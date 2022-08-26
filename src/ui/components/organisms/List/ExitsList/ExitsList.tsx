@@ -1,19 +1,19 @@
+import List from "@/molecules/List/List";
 import MainContentHeader from "@/organisms/MainContentHeader/MainContentHeader";
-import { IEntryListProps } from "./@types";
-import gains from "data/repositories/gains";
+import expenses from "data/repositories/expenses";
+import { Box } from "@mui/material";
+import { IExitsListProps } from "./@types";
 import {
     Container,
 } from './styles'
-import List from "@/molecules/List/List";
-import { Box } from "@mui/material";
 
 
-export default function EntryList(props: IEntryListProps) {
+export default function ExitsList(props: IExitsListProps) {
   return (
     <Container>
-      <MainContentHeader title="Entradas"/>
+      <MainContentHeader title="Saídas"/>
       <ul style={{height:"fit-content"}}>
-        {gains.map((el) => (
+        {expenses.map((el) => (
           <Box key={el.key} style={{justifyContent:"center", display:"flex"}}>
             <List  
               tagColor={el.frequency == 'recorrente' ? '#170ac9' : '#E44C4E'}

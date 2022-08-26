@@ -4,9 +4,11 @@ Esse projeto tem como objetivo, além de treinar habilidades e boas práticas de
 <div align="center">
 <img width="40%" height="fit-content" src="https://user-images.githubusercontent.com/83460816/181144840-5caa2c36-7299-4d9b-b80e-e7441d077230.png" />
 <img width="40%"src="https://user-images.githubusercontent.com/83460816/181144941-cbcaf7d6-b65f-487f-9773-460909f3959d.png" />
+<img width="70%" height="fit-content "src="https://user-images.githubusercontent.com/83460816/187000787-d745ab36-c24d-439f-b23b-ea53ae1ff590.png" />
+<img  width="20%" src="https://user-images.githubusercontent.com/83460816/181145087-24b7844c-95b0-410d-9735-663c0eed3dd4.png" />
 </div>
 <div align="center">
-  <img  width="20%" src="https://user-images.githubusercontent.com/83460816/181145087-24b7844c-95b0-410d-9735-663c0eed3dd4.png" />
+ 
 </div>
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

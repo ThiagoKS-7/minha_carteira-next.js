@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import emojis from "data/utils/emojis";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 import { IMainHeaderProps } from "./@types";
 import ExitIcon from '@mui/icons-material/ExitToApp';
 import {
@@ -14,9 +14,10 @@ import router from "next/router";
 
 
 export default function MainHeader (props: IMainHeaderProps) {
-  const emoji = useMemo(() => {
+  const [emoji, setEmoji] = useState('');
+  useEffect(() => {
       const indice = Math.floor(Math.random() * emojis.length);
-      return emojis[indice];
+      setEmoji(emojis[indice]);
   },[]);
   
   return (

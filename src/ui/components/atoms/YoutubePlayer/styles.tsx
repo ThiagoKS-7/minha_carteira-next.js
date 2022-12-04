@@ -8,8 +8,8 @@ export const Container = styled('div')`
     }
     @media only screen and (min-width : 30px) and (max-width : 600px)
     { 
-        height: 47%;
-        width: 28em;
+        height: 14em;
+        width: 96%;
     }
     @media only screen and (min-width : 601px) and (max-width : 1028px)
     { 
